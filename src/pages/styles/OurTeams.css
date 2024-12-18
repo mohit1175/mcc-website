@@ -1,0 +1,30 @@
+
+
+
+.our-teams-carousel{
+  aspect-ratio: 3/2;
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 25px;
+}
+.carousel{
+  border-radius: 10px;
+  /* margin: 10px; */
+}
+
+
+@media screen and (max-width: 880px){
+    .our-teams-carousel{
+      width: 95%;
+      border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .our-teams-carousel{
+      width: 98%;
+    }
+}

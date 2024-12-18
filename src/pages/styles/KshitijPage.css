@@ -1,0 +1,177 @@
+html{
+  background-color: black;
+}
+
+@font-face {
+  font-family: KshitijFont;
+  src: url("../../assets/fonts/FairyDustB.ttf");
+}
+
+@font-face {
+  font-family: Amsterdam;
+  src: url("../../assets/fonts/Amsterdam.otf");
+}
+
+@font-face {
+  font-family: AbrilFatface;
+  src: url("../../assets/fonts/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../../assets/fonts/manrope.semibold.otf");
+}
+
+.kshitij-body{
+  background-image: url("../../assets/images/i.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  /* margin-top: 120px; */
+}
+
+/* .kshitij-header{
+  font-family: KshitijFont;
+  font-size: 70px;
+  text-align: center;
+  padding-top: 20px;
+  background: linear-gradient(to bottom, white, white 45%, rgb(124, 124, 124));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.kshitij-header{
+  display: flex;
+  flex-flow: wrap row;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.kshitij-logo{
+  aspect-ratio: 1/1;
+  width: 200px;
+}
+.kshitij-header-text{
+  object-fit: contain;
+  width: 300px;
+}
+
+
+.kshitij-text{
+  width: 60%;
+  margin: 30px auto;
+  text-align: justify;
+  font-family: ManropeSemiBold;
+  color: white;
+  font-size: 21px;
+}
+
+.kshitij-carousel{
+  aspect-ratio: 3/2;
+  width: 60%;
+  height: auto;
+  margin: 0 auto 60px;
+  border-radius: 25px;
+  padding: 15px;
+}
+.carousel{
+  border-radius: 10px;
+}
+
+
+
+.kshitij-stats{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px){
+  .kshitij-body{
+    background-image: url("../../assets/images/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .kshitij-text{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 880px){
+  .kshitij-carousel{
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .carousel{
+    border-radius: 5px;
+  }
+  .kshitij-text{
+    width: 85%;
+  }
+  .kshitij-logo{
+    width: 150px;
+  }
+  .kshitij-header-text{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  .kshitij-text{
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .kshitij-carousel{
+    width: 90%;
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 30px;
+  }
+  .carousel{
+    border-radius: 8px;
+  }
+  .kshitij-text{
+    font-size: 13px;
+  }
+  .kshitij-logo{
+    width: 100px;
+  }
+  .kshitij-header-text{
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .kshitij-text{
+    font-size: 11px;
+  }
+  .kshitij-logo{
+    width: 80px;
+  }
+  .kshitij-header-text{
+    width: 130px;
+  }
+}
+
+/* @media screen and (max-width: 515px) {
+  .kshitij-body{
+    margin-top: 100px;
+  }
+} */

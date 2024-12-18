@@ -1,0 +1,154 @@
+html{
+  background-color: black;
+}
+
+@font-face {
+  font-family: Marcellus;
+  src: url("../../assets/fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../../assets/fonts/manrope.semibold.otf");
+}
+
+.annualday-main{
+  justify-content: center;
+  text-align: center;
+}
+
+.annualday-body{
+  background-image: url("../../assets/images/i.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  /* margin-top: 120px; */
+}
+
+.annualday-header{
+  font-family: Marcellus;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+  /* background: linear-gradient(to bottom, white, white 45%, rgb(124, 124, 124));
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.annualday-text{
+  width: 60%;
+  margin: 30px auto;
+  text-align: justify;
+  font-family: ManropeSemiBold;
+  color: white;
+  font-size: 21px;
+}
+
+.register-button{
+  margin: 0 auto;
+}
+
+.annualday-carousel{
+  aspect-ratio: 3/2;
+  width: 60%;
+  height: auto;
+  margin: 0 auto 60px;
+  border-radius: 25px;
+  padding: 15px;
+}
+.carousel{
+  border-radius: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px){
+  .annualday-body{
+    background-image: url("../../assets/images/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .annualday-text{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .annualday-header{
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .annualday-header{
+    font-size: 50px;
+  }
+  .annualday-carousel{
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .carousel{
+    border-radius: 5px;
+  }
+  .annualday-text{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .annualday-header{
+    font-size: 45px;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  .annualday-text{
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .register-button{
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .annualday-header{
+    font-size: 40px;
+  }
+  .annualday-carousel{
+    width: 90%;
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 30px;
+  }
+  .carousel{
+    border-radius: 8px;
+  }
+  .annualday-text{
+    font-size: 13px;
+  }
+  .register-button{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .annualday-header{
+    font-size: 35px;
+  }
+  .annualday-text{
+    font-size: 11px;
+  }
+}
+
+/* @media screen and (max-width: 515px) {
+  .annualday-body{
+    margin-top: 100px;
+  }
+} */

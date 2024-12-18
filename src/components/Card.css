@@ -1,0 +1,107 @@
+@font-face {
+  font-family: AmsterdamOne;
+  src: url("../assets/fonts/Amsterdam.otf");
+}
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../assets/fonts/manrope.semibold.otf");
+}
+
+.card-container{
+  justify-content: center;
+  height: 250px;
+  width: 250px;
+  font-family: ManropeSemiBold;
+  color: white;
+  text-align: center;
+  margin: 25px 25px;
+}
+
+.card-photo{
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.card-photo img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.card-name{
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.card-additional{
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1200px){
+  .card-container{
+    height: 200px;
+    width: 200px;
+    margin: 25px 25px;
+  }
+  
+  .card-photo{
+    height: 150px;
+    width: 150px;
+  }
+  
+  .card-photo img{
+    height: 150px;
+    width: 150px;
+  }
+}
+
+
+@media screen and (max-width: 880px){
+  .card-container{
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px;
+  }
+  
+  .card-photo{
+    height: 125px;
+    width: 125px;
+  }
+  
+  .card-photo img{
+    height: 125px;
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .card-container{
+    height: 150px;
+    width: 150px;
+    margin: 20px 0px;
+  }
+  
+  .card-photo{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .card-photo img{
+    height: 100px;
+    width: 100px;
+  }
+  .card-additional{
+    font-size: 10px;
+  }
+
+  .card-name{
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .card-position{
+    font-size: 14px;
+  }
+  
+}
+

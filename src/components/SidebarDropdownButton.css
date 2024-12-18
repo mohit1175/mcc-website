@@ -1,0 +1,101 @@
+/* DropdownButton.css */
+ .side-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  p{
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  .side-dropdown-toggle {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-family: ManropeSemiBold;
+    font-size: large;
+    background-color: black;
+    position: relative;
+    bottom: 1.35vh;
+    border: 0;
+  }
+
+  .side-ropdown-toggle:hover {
+      border-bottom: 3px solid white;
+      transition: all 0.2s ease-out;
+  }
+
+  .side-dropdown-menu {
+    position: absolute;   
+    left: -47%;      
+    bottom: -280%;  
+
+    z-index: 1000;
+    display: block;
+    font-family: ManropeSemiBold;
+    
+    min-width: 150px;
+    text-align: center;
+    padding: 5px 0;
+    /* margin: 2px 0 0; */
+    font-size: 15px;
+    
+    list-style: none;
+    backdrop-filter: blur(19px) saturate(180%);
+    -webkit-backdrop-filter: blur(19px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    background-clip: padding-box;
+    box-shadow: rgba(63, 63, 63, 0.75) 0px 2px 12px;
+  }
+  
+  .side-dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color:white;    
+  }
+
+.side-dropdown-item a{
+    text-decoration: none;
+}
+.side-dropdown-toggle{
+  background-color: transparent;
+}
+  

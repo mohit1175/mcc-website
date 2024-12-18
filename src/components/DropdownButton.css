@@ -1,0 +1,97 @@
+/* DropdownButton.css */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .a:link{
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  .dropdown-toggle {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-family: ManropeSemiBold;
+    font-size: small;
+    background-color: black;
+    border: 0;
+    margin: 4px 0;
+    
+    }
+
+  .dropdown-toggle:hover {
+      border-bottom: 3px solid white;
+      transition: all 0.2s ease-out;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: -50%;
+
+    z-index: 1000;
+    display: block;
+    font-family: ManropeSemiBold;
+    
+    min-width: 150px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 15px;
+    
+    list-style: none;
+    backdrop-filter: blur(6px) saturate(200%);
+    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    background-color: rgba(133, 133, 133, 0.1);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 100, 0.35) 0px 5px 12px;
+  }
+  
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color:white;
+  
+    
+  }
+
+  
+.dropdown-item a{
+    text-decoration: none;
+}
+  
+ 

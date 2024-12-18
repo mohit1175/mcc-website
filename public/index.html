@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" id="favicon" href="%PUBLIC_URL%/logo-dark.png" />
+    <link rel="apple-touch-icon" id = "apple-touch" href="%PUBLIC_URL%/logo.png" />
+    <script>
+      const usesDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches || false;
+      const favicon = document.getElementById('favicon');
+      const apple = document.getElementById('apple-touch');
+
+      function switchIcon(usesDarkMode) {
+        if (usesDarkMode) { 
+          favicon.href = '%PUBLIC_URL%/logo-dark.png';
+          apple.href = '%PUBLIC_URL%/logo-dark.png';
+        } else {
+          favicon.href = '%PUBLIC_URL%/logo-light.png';
+          apple.href = '%PUBLIC_URL%/logo-light.png';
+        }
+      }
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener( "change", (e) => switchIcon(e.matches));
+      switchIcon(usesDarkMode);
+    </script>
+
+    <meta property="og:site_name" content="Mithibai Cultural Committee"/>
+    <meta name="description" content="MCC - Mithibai Cultural Committee"/>
+    <meta property="og:description" content="MCC - Mithibai Cultural Committee"/>
+    <meta name="keywords" content="mithibai cultural committee, mcc, mithibai college, mithibai cultural, cultural committee, mithibai mcc, mcc college, mcc cc111, cc111 mithibai, college fest"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+      name="description"
+      content="Mithibai Cultural Committee"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Mithibai Cultural Committee</title>
+    <meta property="og:title" content="Mithibai Cultural Committee" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

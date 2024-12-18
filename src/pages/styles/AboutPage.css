@@ -1,0 +1,127 @@
+html{
+  background-image: url("../../assets/images/i.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-body{
+  width: 100%;
+  /* margin-top: 120px; */
+}
+
+@font-face {
+  font-family: Marcellus;
+  src: url("../../assets/fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../../assets/fonts/manrope.semibold.otf");
+}
+
+.about-main{
+  color: white;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about-us-video{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.about-us-video img, .about-us-video iframe{
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+.about-header-parent{
+  display: flex;
+  flex-flow: wrap row;
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-header{
+  font-family: Marcellus;
+  font-size: 60px;
+  color: white;
+  font-weight: 100;
+  margin: 0 10px;
+  /* background: linear-gradient(to bottom, white, white 70%, rgb(124, 124, 124));
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.about-text{
+  font-family: ManropeSemiBold;
+  font-size: 18px;
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px){
+  .about-body{
+    background-image: url("../../assets/images/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-us-video{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .about-header{
+    font-size: 45px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-header{
+    font-size: 60px;
+    margin: 0 5px;
+  }
+  .about-text{
+    font-size: 15px;
+  }
+  .about-us-video{
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-header-parent{
+    width: 85%;
+  }
+  .about-header{
+    font-size: 50px;
+  }
+  .about-text{
+    font-size: 13px;
+  }
+  .about-us-video iframe{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .about-header{
+    font-size: 38px;
+  }
+}
+
+/* @media screen and (max-width: 515px){
+  .about-body{
+    margin-top: 100px;
+  }
+} */

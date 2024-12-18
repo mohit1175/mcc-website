@@ -1,0 +1,223 @@
+html{
+  background-image: url("../../assets/images/i.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-body{
+  width: 100%;
+  /* margin-top: 120px; */
+}
+
+@font-face {
+  font-family: Marcellus;
+  src: url("../../assets/fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+  font-family: Amsterdam;
+  src: url("../../assets/fonts/Amsterdam.otf");
+}
+
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../../assets/fonts/manrope.semibold.otf");
+}
+
+@font-face {
+  font-family: ManropeRegular;
+  src: url("../../assets/fonts/Manrope-Regular.ttf");
+}
+
+
+.home-main{
+  color: white;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+  padding-top: 10px;
+}
+
+.home-header{
+  font-family: Amsterdam;
+  font-size: 30px;
+  /* font-family: AbrilFatface;
+  font-size: 60px; */
+  text-align: center;
+  margin-bottom: 20px;
+  /* padding-top: 20px; */
+  background: linear-gradient(to bottom, white, white 45%, rgb(124, 124, 124));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.register-button {
+  font-family: ManropeSemiBold;
+  padding: 15px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ .register-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: black;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+  .register-button:hover {
+    cursor: pointer;
+    color: #e8e8e8;
+  }
+ 
+  .register-button:hover::before {
+    width: 100%;
+  }
+
+.home-text{
+  font-family: ManropeSemiBold;
+  font-size: 17px;
+  text-align: justify;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.home-carousel{
+  aspect-ratio: 3/2;
+  width: 60%;
+  height: auto;
+  margin: 0 auto 60px;
+  border-radius: 25px;
+  padding: 15px;
+}
+.carousel{
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.annual-count{
+  font-family: ManropeRegular;
+  margin-top: 40px;
+  color: white;
+}
+
+.annual-count span{
+  font-size: 50px;
+  text-shadow:
+  0 0 10px #fff;
+}
+
+.count-header{
+  font-family: Marcellus;
+  color: white;
+  font-size: 55px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+
+
+@media screen and (max-width: 880px){
+  .home-header{
+    /* font-size: 50px; */
+    font-size: 25px;
+  }
+  .home-carousel{
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .annual-count{
+    font-size: 22px;
+  }
+  .count-header{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .annual-count{
+    font-size: 20px;
+  }
+  .count-header{
+    font-size: 35px;
+  }
+  .annual-count span{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .home-header{
+    /* font-size: 45px; */
+    font-size: 20px;
+  }
+  /* .home-body{
+    margin-top: 100px;
+  } */
+  .register-button{
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home-header{
+    /* font-size: 35px; */
+    font-size: 16px;
+  }
+  .home-carousel{
+    width: 90%;
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 30px;
+  }
+  .carousel{
+    border-radius: 8px;
+  }
+  .annual-count{
+    font-size: 14px;
+  }
+  .annual-count span{
+    font-size: 30px;
+  }
+  .count-header{
+    font-size: 30px;
+  }
+  .register-button{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .annual-count span{
+    font-size: 25px;
+  }
+  .count-header{
+    font-size: 25px;
+  }
+}

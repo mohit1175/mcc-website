@@ -1,0 +1,151 @@
+
+html{
+  background-image: url("../../assets/images/i.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.past-achievements-body{
+  width: 100%;
+  /* margin-top: 120px; */
+}
+
+@font-face {
+  font-family: Marcellus;
+  src: url("../../assets/fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../../assets/fonts/manrope.semibold.otf");
+}
+
+@font-face {
+  font-family: ManropeRegular;
+  src: url("../../assets/fonts/Manrope-Regular.ttf");
+}
+
+.past-achievements-header{
+  font-family: Marcellus;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 20px auto;
+  color: white;
+  width: 80%;
+  /* background: linear-gradient(to bottom, white, white 65%, rgb(124, 124, 124));
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.past-achievements-text{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.past-achievements-list{
+  font-family: ManropeSemiBold;
+  font-size: 28px;
+  background-color: rgba(128, 128, 128, 0.3);
+  padding: 20px;
+  border-radius: 50px;
+  margin: 40px 0;
+}
+
+.past-achievements-sublist{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  font-family: ManropeRegular;
+  color: white;
+  list-style: none;
+}
+
+@media screen and (max-width: 1200px){
+  .past-achievements-text{
+    width: 80%;
+    font-size: 24px;
+  }
+  /* .past-achievements-header{
+    font-size: 60px;
+  } */
+}
+
+@media screen and (max-width: 1024px){
+  .past-achievements-header{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .past-achievements-text{
+    width: 80%;
+    font-size: 18px;
+  }
+  .past-achievements-header{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .past-achievements-text{
+    width: 90%;
+  }
+  .past-achievements-header{
+    font-size: 40px;
+  }
+  .past-achievements-list{
+    font-size: 24px;
+  }
+  .past-achievements-sublist{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .past-achievements-header{
+    font-size: 35px;
+  }
+  .past-achievements-text{
+    font-size: 15px;
+  }
+  .past-achievements-list{
+    margin: 20px 0;
+    padding: 30px;
+    font-size: 22px;
+  }
+  .past-achievements-sublist{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .past-achievements-header{
+    font-size: 30px;
+  }
+  .past-achievements-list{
+    font-size: 20px;
+  }
+  .past-achievements-sublist{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .past-achievements-header{
+    font-size: 27px;
+  }
+  .past-achievements-list{
+    font-size: 18px;
+  }
+  .past-achievements-sublist{
+    font-size: 12px;
+  }
+}
+
+
+

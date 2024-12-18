@@ -1,0 +1,67 @@
+@font-face {
+  font-family: AmsterdamOne;
+  src: url("../assets/fonts/Amsterdam.otf");
+}
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../assets/fonts/manrope.semibold.otf");
+}
+
+.text-card-container{
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  font-family: ManropeSemiBold;
+  color: white;
+  text-align: center;
+  margin: 25px 25px;
+}
+
+.text-card-name{
+  margin-top: 5px;
+  font-size: 26px;
+}
+
+.text-card-position{
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1200px){
+  .text-card-container{
+    height: 100px;
+    width: 250px;
+    margin: 25px 25px;
+  }
+}
+
+
+@media screen and (max-width: 880px){
+  .text-card-container{
+    height: 100px;
+    width: 220px;
+    margin: 5px 0px;
+  }
+  .text-card-name{
+    font-size: 18px;
+  }
+  .text-card-position{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .text-card-container{
+    height: 80px;
+    width: 180px;
+    margin: 10px 0px;
+  }
+  .text-card-name{
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .text-card-position{
+    font-size: 13px;
+  }
+  
+}
+

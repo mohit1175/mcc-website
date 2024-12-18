@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: Marcellus;
+  src: url("../assets/fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../assets/fonts/manrope.semibold.otf");
+}
+
+.achievements-dropdown{
+  color: white;
+  font-size: 32px;
+  padding: 30px;
+  width: 40%;
+  margin: 0 auto;
+  font-family: Marcellus;
+  text-align: center;
+}
+
+.achievements-dropdown select{
+  margin-top: 20px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+  font-family: ManropeSemiBold;
+}
+
+@media screen and (max-width: 625px){
+  .achievements-dropdown{
+    font-size: 25px;
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+  }
+  .achievements-dropdown select{
+    height: 25px;
+    width: 100px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .achievements-dropdown{
+    font-size: 20px;
+  }
+}

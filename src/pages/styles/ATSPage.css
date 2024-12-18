@@ -1,0 +1,180 @@
+html{
+  background-color: black;
+}
+
+@font-face{
+  font-family: AcherusMilitantBold;
+  src: url("../../assets/fonts/AcherusMilitantBold.otf");
+}
+
+@font-face {
+  font-family: AbrilFatface;
+  src: url("../../assets/fonts/AbrilFatface-Regular.ttf");
+}
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../../assets/fonts/manrope.semibold.otf");
+}
+
+.ats-body{
+  background-image: url("../../assets/images/i.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  /* margin-top: 120px; */
+}
+
+.ats-header-parent{
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+  flex-flow: wrap row;
+  /* margin: 0 10px 3rem 10px; */
+  justify-content: center;
+}
+
+.ats-logo img{
+  height: 200px;
+}
+
+.ats-header{
+  font-family: AcherusMilitantBold;
+  font-size: 55px;
+  text-align: center;
+  color: white;
+  /* background: linear-gradient(to bottom, white, white 45%, rgb(124, 124, 124));
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.ats-text{
+  width: 60%;
+  margin: 30px auto;
+  text-align: justify;
+  font-family: ManropeSemiBold;
+  color: white;
+  font-size: 21px;
+}
+
+.ats-carousel{
+  aspect-ratio: 3/2;
+  width: 60%;
+  height: auto;
+  margin: 0 auto 60px;
+  border-radius: 25px;
+  padding: 15px;
+}
+.carousel{
+  border-radius: 10px;
+}
+
+.ats-stats{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px){
+  .ats-body{
+    background-image: url("../../assets/images/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .ats-text{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .ats-header{
+    /* height: 75px; */
+    /* font-size: 60px; */
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .ats-header{
+    font-size: 35px;
+  }
+  .ats-carousel{
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .carousel{
+    border-radius: 5px;
+  }
+  .ats-text{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .ats-header{
+    font-size: 45px;
+    margin-bottom: -20px;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  .ats-header{
+    /* height: 100px; */
+    /* font-size: 40px; */
+    /* font-size: 25px; */
+    /* margin-bottom: -40px; */
+    background: linear-gradient(to bottom, white, white 40%, rgb(124, 124, 124));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .ats-text{
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ats-carousel{
+    width: 90%;
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 30px;
+  }
+  .ats-logo img{
+    height: 150px;
+  }
+  .carousel{
+    border-radius: 8px;
+  }
+  .ats-text{
+    font-size: 13px;
+  }
+  .ats-header{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  /* .ats-header-parent{
+    margin-bottom: 1.5rem;
+  } */
+  .ats-header{
+    font-size: 20px;
+    /* font-size: 15px; */
+    /* height: 40px; */
+  }
+  .ats-text{
+    font-size: 11px;
+  }
+}
+
+/* @media screen and (max-width: 515px) {
+  .ats-body{
+    margin-top: 100px;
+  }
+} */

@@ -1,0 +1,375 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: AmsterdamOne;
+    src: url("../assets/fonts/Amsterdam.otf");
+}
+@font-face {
+    font-family: ManropeSemiBold;
+    src: url("../assets/fonts/manrope.semibold.otf");
+}
+
+.navbar{
+    /* background-image: url("../assets/images/home-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    /* position: sticky; */
+    /* position: fixed; */
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+  
+.navbar-container {
+    color: white;
+    position: absolute;
+    display: flex;
+    position: relative;
+    float: left;
+    flex: 1;
+    align-items: center;
+    min-height: 110px;
+    width: fit-content;
+    /* width: 70vh; */
+    font-family: AmsterdamOne;
+    font-size: 13px;    
+}
+
+.navbar-logo{
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+}
+
+.navbar-logo img {
+    width: 100px;
+    height: 100px;
+    justify-content: right;
+    margin: 0 20px;
+}
+
+.nav-menu {
+    /* margin-left: auto; */
+    display: flex;
+    list-style: none;
+    text-align: center;
+    height: 120px;
+    /* width: 140vh; */
+    width: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 40px;
+}
+
+.nav-item {
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+
+.nav-links {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-family: ManropeSemiBold;
+    font-size: small;
+    margin: 3px 0;
+}
+
+.nav-links:hover {
+    border-bottom: 3px solid white;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-header-parent{
+    display: flex;
+    white-space: nowrap;
+    margin-left: -10px;
+    font-size: small;
+}
+
+.navbar-header{
+    font-size: 12px;
+    margin: 1px 2px;
+}
+
+#dropdown{
+    color: white;
+    background-color: none;
+}
+
+
+.menu-icon{
+    display: none;
+    padding-right:2%;
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 1268px){
+    .nav-menu{
+        padding-right: 0px;
+    }
+    
+}
+
+@media screen and (max-height: 705px) {
+    .navbar-container {
+        width: 400px;
+        
+    }
+    .navbar-logo{
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-header {
+        font-size: 11px;
+    }
+    .navbar-container {
+        width: 100%;
+    }
+    
+    .nav-links{
+        font-size: 14px;
+    }
+
+    .navbar-logo{
+        position: absolute;
+        left: 0%;
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:1090px) {
+    .navbar-header{
+        font-size: 10px;
+    }
+    
+    .navbar-logo img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .nav-links{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 970px){
+    /* .nav-menu{
+        width: 95vh;
+        
+    } */
+    /* .navbar-header{
+        font-size: 12px;
+    } */
+   
+}
+/* Hamburger menu here*/
+@media screen and (max-width: 880px){
+    .navbar{
+        width: 100%;
+    }
+    .nav-menu{
+        display: none;
+        flex-direction: column;
+        align-items: start;
+    }
+    .navbar-container{
+        justify-content: center;
+    }
+    .navbar-header{
+        font-size: 15px;
+    }
+    .navbar-logo img {
+        width: 100px;
+        height: 100px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-icon img{
+        height: 40px;
+        width: 40px;
+        position: relative;
+        bottom:20%;
+        
+
+        
+    }
+    .navbar-logo{
+        position: absolute;
+        left:0%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .navbar-logo{
+        position: absolute;
+        left:0%;
+    }
+}
+
+
+
+@media screen and (max-width: 625px) {
+    .navbar-container{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .menu-icon{
+        height: 30px;
+        margin: 0 auto;
+    }
+    .menu-icon img{
+        height: 30px;
+        width: 30px;
+        position:relative;
+        top:1%;
+    }
+    .navbar-container img{
+        height: 80px;
+        width: 80px;
+    }
+    .navbar-logo{
+        width: 50vh;
+        position: absolute;
+        left:0%;
+    }
+}
+
+
+
+@media screen and (max-width: 555px){
+   
+  .navbar-header{
+    font-size: 13px;
+  }
+}
+
+
+
+@media screen and (max-width: 515px){
+    .navbar{
+        height: 100px;
+    }
+    .navbar-container img{
+        height: 70px;
+        width: 70px;
+        margin: 0 5px;
+    }
+    .navbar-header{
+        font-size: 12px;
+    }
+    .navbar-logo{
+        width: 35vh;
+        margin-right: 25px;
+        position: absolute;
+        left: 0%;
+       
+    }
+}
+
+@media screen and (max-width: 460px){
+    .navbar-logo{
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .navbar-logo{
+        width: 35vh;
+        margin-right: 20px;
+    } 
+    .navbar-header{
+        font-size: 12px;
+    }  
+    .navbar-logo{
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .navbar-logo{
+        width: 35vh;
+        margin-right: 20px;
+    } 
+    .navbar-header{
+        font-size: 11px;
+    }  
+    .navbar-logo{
+        position: absolute;
+        left: 0%;
+        
+    }
+}
+
+@media screen and (max-width: 375px){
+    
+    .navbar-container img{
+        height: 70px;
+        width: 70px;
+        margin: 0 0px;
+    }
+    .navbar-header{
+        font-size: 9px;
+    }
+    .navbar-logo{
+        width: 30vh;
+        position: absolute;
+        left: 0cap;
+
+    } 
+}
+
+@media screen and (max-width: 330px){
+    .navbar{
+        height: 100px;
+    }
+    .navbar-container{
+        margin-left: -5%;
+    }
+
+    .navbar-container img{
+        height: 60px;
+        width: 60px;
+        margin: 0 15px;
+
+    }
+    .navbar-header{
+        font-size: 9px;
+    }
+    .navbar-logo{
+        width: 29vh;
+        margin-right: 15px;
+    } 
+    .menu-icon img{
+       position:relative;
+       top:15%;
+
+    }
+}

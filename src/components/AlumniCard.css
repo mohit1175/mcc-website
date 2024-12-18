@@ -1,0 +1,25 @@
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../assets/fonts/manrope.semibold.otf");
+}
+
+.alumni-card{
+  font-family: ManropeSemiBold;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+}
+
+.alumni-name{
+  font-size: large;
+}
+
+.alumni-position, .alumni-year{
+  font-size: medium;
+}
+
+.alumni-photo img{
+  aspect-ratio: 1/1;
+  width: 80%;;
+}

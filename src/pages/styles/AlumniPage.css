@@ -1,0 +1,148 @@
+html{
+  background-image: url("../../assets/images/i.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.alumni-body{
+  width: 100%;
+  /* margin-top: 120px; */
+}
+
+@font-face {
+  font-family: Marcellus;
+  src: url("../../assets/fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+  font-family: ManropeSemiBold;
+  src: url("../../assets/fonts/manrope.semibold.otf");
+}
+
+.alumni-header{
+  font-family: Marcellus;
+  font-size: 70px;
+  text-align: center;
+  padding-top: 20px;
+  width: 90%;
+  margin: 20px auto;
+  color: white;
+  /* background: linear-gradient(to bottom, white, white 45%, rgb(124, 124, 124));
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.notable-alumni-header{
+  font-size: xx-large;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.Collapsible, .notable-alumni{
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  font-family: ManropeSemiBold;
+  font-size: xx-large;
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.9); 
+  margin-bottom: 30px;
+}
+
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+.Collapsible__trigger:after {
+  font-family: 'FontAwesome';
+  content: url("../../assets/images/icons/downarrow.png");
+  position: absolute;
+  right: -170px;
+  top: -185px;
+  display: block;
+  scale: 15%;
+  transition: transform 300ms;
+}
+
+.Collapsible__trigger.is-open:after {
+  transform: rotateZ(180deg);
+}
+
+.Collapsible__trigger.is-disabled {
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.Collapsible__contentInner, .notable-alumni-content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap row;
+}
+
+/* @media screen and (max-width: 1200px){
+  .alumni-header{
+    font-size: 30px;
+  }
+} */
+
+@media screen and (max-width: 1024px){
+  .alumni-header{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .Collapsible, .notable-alumni{
+    width: 90%;
+  }
+}
+
+/* @media screen and (max-width: 880px){
+  .alumni-header{
+    font-size: 55px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .Collapsible, .notable-alumni{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .alumni-header{
+    font-size: 45px;
+  }
+  .Collapsible, .notable-alumni{
+    font-size: x-large;
+  }
+  .Collapsible__trigger:after{
+    scale: 10%;
+    right: -185px;
+    top: -195px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .alumni-header{
+    font-size: 40px;
+  }
+}
+
+
+
+/* @media screen and (max-width: 515px) {
+  .alumni-body{
+    margin-top: 100px;
+  }
+} */ 
